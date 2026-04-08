@@ -6,30 +6,113 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
-
 function Router() {
   return (
     <Switch>
+      {/* Portuguese (PT-BR) - Root paths */}
       <Route path={"/"} component={Home} />
+      <Route path={"/watch-live-tv-online.html"} component={Home} />
+      <Route path={"/futebol-ao-vivo.html"} component={Home} />
+      <Route path={"/filmes-online.html"} component={Home} />
+      <Route path={"/series-online.html"} component={Home} />
+      <Route path={"/teste-gratis.html"} component={Home} />
+      <Route path={"/planos.html"} component={Home} />
+      <Route path={"/assinar.html"} component={Home} />
+      <Route path={"/ativacao.html"} component={Home} />
+      <Route path={"/renovar-smart-tv.html"} component={Home} />
+      <Route path={"/renovar-tv-box.html"} component={Home} />
+      <Route path={"/renovar-app.html"} component={Home} />
+      <Route path={"/pagar-plano.html"} component={Home} />
+      <Route path={"/renovar-new-braz.html"} component={Home} />
+      <Route path={"/segunda-via.html"} component={Home} />
+      <Route path={"/canais-ao-vivo.html"} component={Home} />
+      <Route path={"/instalar-smart-tv.html"} component={Home} />
+      <Route path={"/instalar-tv-box.html"} component={Home} />
+      <Route path={"/instalar-firestick.html"} component={Home} />
+      <Route path={"/tv-online-brasil.html"} component={Home} />
+      <Route path={"/free-streaming-app.html"} component={Home} />
+      <Route path={"/watch-live-sports-free.html"} component={Home} />
+      <Route path={"/watch-tv-online-free.html"} component={Home} />
+      <Route path={"/blog/"} component={Home} />
+      <Route path={"/blog/como-assistir-tv-online.html"} component={Home} />
+      <Route path={"/blog/melhor-streaming-2026.html"} component={Home} />
+      <Route path={"/blog/como-ver-futebol-ao-vivo.html"} component={Home} />
+      <Route path={"/blog/como-instalar-na-smart-tv.html"} component={Home} />
+      <Route path={"/blog/app-para-tv-box.html"} component={Home} />
+
+      {/* English (EN) - /en/ paths */}
+      <Route path={"/en/"} component={Home} />
+      <Route path={"/en/watch-live-tv.html"} component={Home} />
+      <Route path={"/en/live-sports.html"} component={Home} />
+      <Route path={"/en/movies-online.html"} component={Home} />
+      <Route path={"/en/series-online.html"} component={Home} />
+      <Route path={"/en/free-trial.html"} component={Home} />
+      <Route path={"/en/plans.html"} component={Home} />
+      <Route path={"/en/subscribe.html"} component={Home} />
+      <Route path={"/en/activation.html"} component={Home} />
+      <Route path={"/en/renew-smart-tv.html"} component={Home} />
+      <Route path={"/en/renew-tv-box.html"} component={Home} />
+      <Route path={"/en/renew-app.html"} component={Home} />
+      <Route path={"/en/pay-plan.html"} component={Home} />
+      <Route path={"/en/renew-new-braz.html"} component={Home} />
+      <Route path={"/en/invoice.html"} component={Home} />
+      <Route path={"/en/live-channels.html"} component={Home} />
+      <Route path={"/en/install-smart-tv.html"} component={Home} />
+      <Route path={"/en/install-tv-box.html"} component={Home} />
+      <Route path={"/en/install-firestick.html"} component={Home} />
+      <Route path={"/en/tv-online-brazil.html"} component={Home} />
+      <Route path={"/en/free-streaming-app.html"} component={Home} />
+      <Route path={"/en/watch-live-sports-free.html"} component={Home} />
+      <Route path={"/en/watch-tv-online-free.html"} component={Home} />
+      <Route path={"/en/blog/"} component={Home} />
+      <Route path={"/en/blog/how-to-watch-live-tv-online.html"} component={Home} />
+      <Route path={"/en/blog/best-streaming-platforms-2026.html"} component={Home} />
+      <Route path={"/en/blog/watch-football-online.html"} component={Home} />
+      <Route path={"/en/blog/how-to-install-on-smart-tv.html"} component={Home} />
+      <Route path={"/en/blog/best-app-for-tv-box.html"} component={Home} />
+
+      {/* Spanish (ES) - /es/ paths */}
+      <Route path={"/es/"} component={Home} />
+      <Route path={"/es/tv-online.html"} component={Home} />
+      <Route path={"/es/futbol-en-vivo.html"} component={Home} />
+      <Route path={"/es/peliculas.html"} component={Home} />
+      <Route path={"/es/series-online.html"} component={Home} />
+      <Route path={"/es/prueba-gratis.html"} component={Home} />
+      <Route path={"/es/planes.html"} component={Home} />
+      <Route path={"/es/suscribirse.html"} component={Home} />
+      <Route path={"/es/activacion.html"} component={Home} />
+      <Route path={"/es/renovar-smart-tv.html"} component={Home} />
+      <Route path={"/es/renovar-tv-box.html"} component={Home} />
+      <Route path={"/es/renovar-app.html"} component={Home} />
+      <Route path={"/es/pagar-plan.html"} component={Home} />
+      <Route path={"/es/renovar-new-braz.html"} component={Home} />
+      <Route path={"/es/segunda-via.html"} component={Home} />
+      <Route path={"/es/canales-en-vivo.html"} component={Home} />
+      <Route path={"/es/instalar-smart-tv.html"} component={Home} />
+      <Route path={"/es/instalar-tv-box.html"} component={Home} />
+      <Route path={"/es/instalar-firestick.html"} component={Home} />
+      <Route path={"/es/tv-online-brasil.html"} component={Home} />
+      <Route path={"/es/app-streaming-gratis.html"} component={Home} />
+      <Route path={"/es/ver-deportes-en-vivo-gratis.html"} component={Home} />
+      <Route path={"/es/ver-tv-online-gratis.html"} component={Home} />
+      <Route path={"/es/blog/"} component={Home} />
+      <Route path={"/es/blog/ver-tv-online.html"} component={Home} />
+      <Route path={"/es/blog/ver-futbol-en-vivo.html"} component={Home} />
+      <Route path={"/es/blog/mejor-streaming-2026.html"} component={Home} />
+      <Route path={"/es/blog/como-instalar-en-smart-tv.html"} component={Home} />
+      <Route path={"/es/blog/mejor-app-para-tv-box.html"} component={Home} />
+
+      {/* 404 */}
       <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
           <Router />

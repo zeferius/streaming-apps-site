@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /en/
+Allow: /es/
+Allow: /blog/
+Allow: /en/blog/
+Allow: /es/blog/
+
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://streaming-apps.manus.space/sitemap.xml
+Sitemap: https://streaming-apps.manus.space/sitemap-en.xml
+Sitemap: https://streaming-apps.manus.space/sitemap-es.xml
+Sitemap: https://streaming-apps.manus.space/sitemap-blog.xml

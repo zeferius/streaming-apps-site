@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Root Pages -->
+  <url>
+    <loc>https://streaming-apps.manus.space/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://streaming-apps.manus.space/" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/watch-live-tv-online.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/watch-live-tv.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/tv-online.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/futebol-ao-vivo.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/live-sports.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/futbol-en-vivo.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/filmes-online.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/movies-online.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/peliculas.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/series-online.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/series-online.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/series-online.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/teste-gratis.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/free-trial.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/prueba-gratis.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/planos.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/plans.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/planes.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/assinar.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/subscribe.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/suscribirse.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/ativacao.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/activation.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/activacion.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/renovar-smart-tv.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/renew-smart-tv.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/renovar-smart-tv.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/renovar-tv-box.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/renew-tv-box.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/renovar-tv-box.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/renovar-app.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/renew-app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/renovar-app.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/pagar-plano.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/pay-plan.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/pagar-plan.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/renovar-new-braz.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/renew-new-braz.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/renovar-new-braz.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/segunda-via.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/invoice.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/segunda-via.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/canais-ao-vivo.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/live-channels.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/canales-en-vivo.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/instalar-smart-tv.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/install-smart-tv.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/instalar-smart-tv.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/instalar-tv-box.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/install-tv-box.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/instalar-tv-box.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/instalar-firestick.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/install-firestick.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/instalar-firestick.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/tv-online-brasil.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/tv-online-brazil.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/tv-online-brasil.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/free-streaming-app.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/free-streaming-app.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/app-streaming-gratis.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/watch-live-sports-free.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/watch-live-sports-free.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/ver-deportes-en-vivo-gratis.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/watch-tv-online-free.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/watch-tv-online-free.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/ver-tv-online-gratis.html" />
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://streaming-apps.manus.space/blog/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/blog/como-assistir-tv-online.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/blog/how-to-watch-live-tv-online.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/blog/ver-tv-online.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/blog/melhor-streaming-2026.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/blog/best-streaming-platforms-2026.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/blog/mejor-streaming-2026.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/blog/como-ver-futebol-ao-vivo.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/blog/watch-football-online.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/blog/ver-futbol-en-vivo.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/blog/como-instalar-na-smart-tv.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/blog/how-to-install-on-smart-tv.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/blog/como-instalar-en-smart-tv.html" />
+  </url>
+  
+  <url>
+    <loc>https://streaming-apps.manus.space/blog/app-para-tv-box.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://streaming-apps.manus.space/en/blog/best-app-for-tv-box.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://streaming-apps.manus.space/es/blog/mejor-app-para-tv-box.html" />
+  </url>
+</urlset>
