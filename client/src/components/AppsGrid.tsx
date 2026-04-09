@@ -8,6 +8,7 @@ interface AppsGridProps {
 }
 
 const NEWBRAZ_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/WhatsAppImage2026-02-16at13.22.31_9cdfdab4.jpeg';
+const NEWHYBRID_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/pasted_file_Y7gopj_image_1f5f0711.png';
 
 const apps = [
   {
@@ -30,7 +31,7 @@ const apps = [
   {
     id: 'newhybrid',
     name: 'New Hybrid',
-    logo: 'https://via.placeholder.com/200x200/8b5cf6/ffffff?text=New+Hybrid',
+    logo: NEWHYBRID_LOGO,
     pt: {
       description: 'Streaming híbrido com conteúdo exclusivo',
       features: 'Canais premium, conteúdo original'

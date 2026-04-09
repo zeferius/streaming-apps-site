@@ -31,10 +31,12 @@ export default function Header({ language, onLanguageChange, onWhatsAppClick }: 
       <div className="container flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
-            <span className="text-white font-bold text-lg">S</span>
-          </div>
-          <span className="hidden sm:inline font-bold gradient-text">Streaming Apps</span>
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/WhatsAppImage2026-02-16at13.22.31_9cdfdab4.jpeg"
+            alt="New Braz Logo"
+            className="w-10 h-10 object-contain"
+          />
+          <span className="hidden sm:inline font-bold gradient-text">New Braz</span>
         </div>
 
         {/* Desktop Navigation */}
