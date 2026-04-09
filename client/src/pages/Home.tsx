@@ -3,6 +3,8 @@ import { Play, Zap, Tv, Users, ChevronRight, Star } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppFlow from '@/components/WhatsAppFlow';
+import NewBrazShowcase from '@/components/NewBrazShowcase';
+import AppsGrid from '@/components/AppsGrid';
 import { Language, APPS, PLANS, detectLanguage, getPathForLanguage } from '@/lib/i18n';
 
 export default function Home() {
@@ -198,31 +200,21 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Apps Section */}
-        <section className="py-16 md:py-24">
+        {/* New Braz Showcase Section */}
+        <section className="py-16 md:py-24 bg-card/50">
           <div className="container">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
-              {t.apps_title}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {APPS.map((app) => (
-                <div key={app.id} className="card-glass space-y-4">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
-                    <Star className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="font-bold text-lg">{app.name}</h3>
-                  <p className="text-sm text-gray-400">{app.description}</p>
-                  <button
-                    onClick={() => setIsWhatsAppOpen(true)}
-                    className="btn-secondary w-full text-sm"
-                  >
-                    {t.subscribe_cta}
-                  </button>
-                </div>
-              ))}
-            </div>
+            <NewBrazShowcase
+              language={language}
+              onWhatsAppClick={() => setIsWhatsAppOpen(true)}
+            />
           </div>
         </section>
+
+        {/* Apps Grid Section */}
+        <AppsGrid
+          language={language}
+          onWhatsAppClick={() => setIsWhatsAppOpen(true)}
+        />
 
         {/* Plans Section */}
         <section className="py-16 md:py-24 bg-card/50">
