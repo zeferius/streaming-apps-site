@@ -9,6 +9,7 @@ interface AppsGridProps {
 
 const NEWBRAZ_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/WhatsAppImage2026-02-16at13.22.31_9cdfdab4.jpeg';
 const NEWHYBRID_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/pasted_file_Y7gopj_image_1f5f0711.png';
+const DREAMTV_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/WhatsAppImage2026-01-08at15.52.25_202862ab.jpeg';
 const XCLOUDTV_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/WhatsAppImage2026-01-05at16.41.57_07f4bd24.jpeg';
 
 const apps = [
@@ -49,7 +50,7 @@ const apps = [
   {
     id: 'dreamtv',
     name: 'Dream TV',
-    logo: 'https://via.placeholder.com/200x200/3b82f6/ffffff?text=Dream+TV',
+    logo: DREAMTV_LOGO,
     pt: {
       description: 'Sonhe com o melhor entretenimento',
       features: 'Filmes, séries e documentários'
