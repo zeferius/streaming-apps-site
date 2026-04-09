@@ -1,6 +1,7 @@
 import React from 'react';
-import { Play, Download } from 'lucide-react';
+import { Play, Download, Copy, Check } from 'lucide-react';
 import { Language } from '@/lib/i18n';
+import { useState } from 'react';
 
 interface AppsGridProps {
   language: Language;
@@ -17,73 +18,157 @@ const apps = [
     id: 'newbraz',
     name: 'New Braz',
     logo: NEWBRAZ_LOGO,
+    code: '1586660',
     pt: {
-      description: 'O melhor app de streaming do Brasil',
-      features: 'TV ao vivo, filmes, séries e muito mais'
+      description: 'App oficial com tecnologia P2P',
+      tagline: 'Tecnologia P2P integrada',
+      features: [
+        'Interface moderna',
+        'Suporte 24/7',
+        'Atualizações automáticas',
+        'Tecnologia P2P avançada'
+      ]
     },
     en: {
-      description: 'Brazil\'s best streaming app',
-      features: 'Live TV, movies, series and more'
+      description: 'Official app with P2P technology',
+      tagline: 'Integrated P2P technology',
+      features: [
+        'Modern interface',
+        '24/7 support',
+        'Automatic updates',
+        'Advanced P2P technology'
+      ]
     },
     es: {
-      description: 'La mejor aplicación de streaming de Brasil',
-      features: 'TV en vivo, películas, series y más'
+      description: 'App oficial con tecnología P2P',
+      tagline: 'Tecnología P2P integrada',
+      features: [
+        'Interfaz moderna',
+        'Soporte 24/7',
+        'Actualizaciones automáticas',
+        'Tecnología P2P avanzada'
+      ]
     }
   },
   {
     id: 'newhybrid',
     name: 'New Hybrid',
     logo: NEWHYBRID_LOGO,
+    code: '1941290',
     pt: {
-      description: 'Streaming híbrido com conteúdo exclusivo',
-      features: 'Canais premium, conteúdo original'
+      description: 'Solução híbrida IPTV + P2P',
+      tagline: 'Híbrido IPTV/P2P',
+      features: [
+        'Alta performance',
+        'Estável',
+        'Versátil',
+        'Melhor de dois mundos'
+      ]
     },
     en: {
-      description: 'Hybrid streaming with exclusive content',
-      features: 'Premium channels, original content'
+      description: 'Hybrid solution IPTV + P2P',
+      tagline: 'Hybrid IPTV/P2P',
+      features: [
+        'High performance',
+        'Stable',
+        'Versatile',
+        'Best of both worlds'
+      ]
     },
     es: {
-      description: 'Streaming híbrido con contenido exclusivo',
-      features: 'Canales premium, contenido original'
+      description: 'Solución híbrida IPTV + P2P',
+      tagline: 'Híbrido IPTV/P2P',
+      features: [
+        'Alto rendimiento',
+        'Estable',
+        'Versátil',
+        'Lo mejor de ambos mundos'
+      ]
     }
   },
   {
     id: 'dreamtv',
     name: 'Dream TV',
     logo: DREAMTV_LOGO,
+    code: '8627648',
     pt: {
-      description: 'Sonhe com o melhor entretenimento',
-      features: 'Filmes, séries e documentários'
+      description: 'Interface elegante e fluída',
+      tagline: 'Design moderno',
+      features: [
+        'Fácil navegação',
+        'Rápido',
+        'Intuitivo',
+        'Visual premium'
+      ]
     },
     en: {
-      description: 'Dream with the best entertainment',
-      features: 'Movies, series and documentaries'
+      description: 'Elegant and fluid interface',
+      tagline: 'Modern design',
+      features: [
+        'Easy navigation',
+        'Fast',
+        'Intuitive',
+        'Premium visual'
+      ]
     },
     es: {
-      description: 'Sueña con el mejor entretenimiento',
-      features: 'Películas, series y documentales'
+      description: 'Interfaz elegante y fluida',
+      tagline: 'Diseño moderno',
+      features: [
+        'Fácil navegación',
+        'Rápido',
+        'Intuitivo',
+        'Visual premium'
+      ]
     }
   },
   {
     id: 'xcloudtv',
     name: 'XCloud TV',
     logo: XCLOUDTV_LOGO,
+    code: '740644',
     pt: {
-      description: 'Streaming na nuvem com qualidade 4K',
-      features: 'Sem downloads, acesso instantâneo'
+      description: 'Design moderno e visual bonito',
+      tagline: 'Visual bonito',
+      features: [
+        'Fluído',
+        'Modo cinema',
+        'Favoritos',
+        'Experiência premium'
+      ]
     },
     en: {
-      description: 'Cloud streaming with 4K quality',
-      features: 'No downloads, instant access'
+      description: 'Modern design and beautiful visual',
+      tagline: 'Beautiful visual',
+      features: [
+        'Smooth',
+        'Cinema mode',
+        'Favorites',
+        'Premium experience'
+      ]
     },
     es: {
-      description: 'Streaming en la nube con calidad 4K',
-      features: 'Sin descargas, acceso instantáneo'
+      description: 'Diseño moderno y visual hermoso',
+      tagline: 'Visual hermoso',
+      features: [
+        'Fluido',
+        'Modo cine',
+        'Favoritos',
+        'Experiencia premium'
+      ]
     }
   }
 ];
 
 export default function AppsGrid({ language, onWhatsAppClick }: AppsGridProps) {
+  const [copiedCode, setCopiedCode] = useState<string | null>(null);
+
+  const handleCopyCode = (code: string) => {
+    navigator.clipboard.writeText(code);
+    setCopiedCode(code);
+    setTimeout(() => setCopiedCode(null), 2000);
+  };
+
   return (
     <section className="py-16 md:py-24">
       <div className="container">
@@ -103,6 +188,8 @@ export default function AppsGrid({ language, onWhatsAppClick }: AppsGridProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {apps.map((app) => {
             const content = app[language] || app.pt;
+            const isCopied = copiedCode === app.code;
+            
             return (
               <div
                 key={app.id}
@@ -119,16 +206,52 @@ export default function AppsGrid({ language, onWhatsAppClick }: AppsGridProps) {
 
                 {/* Content */}
                 <div className="p-6 flex-1 flex flex-col justify-between">
-                  <div className="space-y-3 mb-6">
-                    <h3 className="text-xl font-bold text-white">
-                      {app.name}
-                    </h3>
-                    <p className="text-orange-400 font-semibold text-sm">
+                  <div className="space-y-4 mb-6">
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-1">
+                        {app.name}
+                      </h3>
+                      <p className="text-orange-400 font-semibold text-xs uppercase tracking-wide">
+                        {content.tagline}
+                      </p>
+                    </div>
+                    
+                    <p className="text-gray-300 text-sm font-medium">
                       {content.description}
                     </p>
-                    <p className="text-gray-400 text-sm">
-                      {content.features}
-                    </p>
+
+                    {/* Features List */}
+                    <div className="space-y-2">
+                      {content.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-start gap-2">
+                          <div className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-1.5 flex-shrink-0" />
+                          <span className="text-xs text-gray-400">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Download Code */}
+                    <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                      <p className="text-xs text-gray-400 mb-2">
+                        {language === 'pt' ? 'Código Download' : language === 'en' ? 'Download Code' : 'Código Descarga'}
+                      </p>
+                      <div className="flex items-center justify-between gap-2">
+                        <code className="text-sm font-mono font-bold text-orange-400">
+                          {app.code}
+                        </code>
+                        <button
+                          onClick={() => handleCopyCode(app.code)}
+                          className="p-1.5 hover:bg-white/10 rounded transition-colors"
+                          title={language === 'pt' ? 'Copiar' : language === 'en' ? 'Copy' : 'Copiar'}
+                        >
+                          {isCopied ? (
+                            <Check className="w-4 h-4 text-green-400" />
+                          ) : (
+                            <Copy className="w-4 h-4 text-gray-400" />
+                          )}
+                        </button>
+                      </div>
+                    </div>
                   </div>
 
                   <button
