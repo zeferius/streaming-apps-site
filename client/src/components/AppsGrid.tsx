@@ -9,6 +9,7 @@ interface AppsGridProps {
 
 const NEWBRAZ_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/WhatsAppImage2026-02-16at13.22.31_9cdfdab4.jpeg';
 const NEWHYBRID_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/pasted_file_Y7gopj_image_1f5f0711.png';
+const XCLOUDTV_LOGO = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663414843623/K5FtQ9v4CTjXbgrnMqSARH/WhatsAppImage2026-01-05at16.41.57_07f4bd24.jpeg';
 
 const apps = [
   {
@@ -65,7 +66,7 @@ const apps = [
   {
     id: 'xcloudtv',
     name: 'XCloud TV',
-    logo: 'https://via.placeholder.com/200x200/f97316/ffffff?text=XCloud+TV',
+    logo: XCLOUDTV_LOGO,
     pt: {
       description: 'Streaming na nuvem com qualidade 4K',
       features: 'Sem downloads, acesso instantâneo'
