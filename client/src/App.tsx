@@ -5,6 +5,13 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import SpecificPages from "./pages/SpecificPages";
+
+type PageType = 'install-newbraz' | 'football' | 'movies' | 'series' | 'trial' | 'plans' | 'subscribe' | 'activation' | 'renew' | 'payment' | 'invoice' | 'channels' | 'install-smart-tv' | 'install-tv-box' | 'install-firestick' | 'tv-brasil' | 'newbraz' | 'assistir' | 'canal-brasil';
+
+const PageWrapper = ({ pageType }: { pageType: PageType }) => (
+  <SpecificPages pageType={pageType} />
+);
 
 function Router() {
   return (
@@ -12,23 +19,12 @@ function Router() {
       {/* Portuguese (PT-BR) - Root paths */}
       <Route path={"/"} component={Home} />
       <Route path={"/watch-live-tv-online.html"} component={Home} />
-      <Route path={"/futebol-ao-vivo.html"} component={Home} />
-      <Route path={"/filmes-online.html"} component={Home} />
-      <Route path={"/series-online.html"} component={Home} />
       <Route path={"/teste-gratis.html"} component={Home} />
       <Route path={"/planos.html"} component={Home} />
       <Route path={"/assinar.html"} component={Home} />
       <Route path={"/ativacao.html"} component={Home} />
-      <Route path={"/renovar-smart-tv.html"} component={Home} />
-      <Route path={"/renovar-tv-box.html"} component={Home} />
-      <Route path={"/renovar-app.html"} component={Home} />
       <Route path={"/pagar-plano.html"} component={Home} />
-      <Route path={"/renovar-new-braz.html"} component={Home} />
       <Route path={"/segunda-via.html"} component={Home} />
-      <Route path={"/canais-ao-vivo.html"} component={Home} />
-      <Route path={"/instalar-smart-tv.html"} component={Home} />
-      <Route path={"/instalar-tv-box.html"} component={Home} />
-      <Route path={"/instalar-firestick.html"} component={Home} />
       <Route path={"/tv-online-brasil.html"} component={Home} />
       <Route path={"/free-streaming-app.html"} component={Home} />
       <Route path={"/watch-live-sports-free.html"} component={Home} />
@@ -39,6 +35,29 @@ function Router() {
       <Route path={"/blog/como-ver-futebol-ao-vivo.html"} component={Home} />
       <Route path={"/blog/como-instalar-na-smart-tv.html"} component={Home} />
       <Route path={"/blog/app-para-tv-box.html"} component={Home} />
+
+      {/* Portuguese Specific Pages */}
+      <Route path={"/instalar-newbraz.html"} component={() => <PageWrapper pageType="install-newbraz" />} />
+      <Route path={"/futebol-ao-vivo.html"} component={() => <PageWrapper pageType="football" />} />
+      <Route path={"/filmes-online.html"} component={() => <PageWrapper pageType="movies" />} />
+      <Route path={"/series-online.html"} component={() => <PageWrapper pageType="series" />} />
+      <Route path={"/newbraz-teste-gratis.html"} component={() => <PageWrapper pageType="trial" />} />
+      <Route path={"/new-braz-planos.html"} component={() => <PageWrapper pageType="plans" />} />
+      <Route path={"/assinar-newbraz.html"} component={() => <PageWrapper pageType="subscribe" />} />
+      <Route path={"/newbraz-ativacao.html"} component={() => <PageWrapper pageType="activation" />} />
+      <Route path={"/new-braz-ativacao.html"} component={() => <PageWrapper pageType="activation" />} />
+      <Route path={"/renovar-smart-tv.html"} component={() => <PageWrapper pageType="renew" />} />
+      <Route path={"/renovar-tv-box.html"} component={() => <PageWrapper pageType="renew" />} />
+      <Route path={"/renovar-app.html"} component={() => <PageWrapper pageType="renew" />} />
+      <Route path={"/renovar-new-braz.html"} component={() => <PageWrapper pageType="renew" />} />
+      <Route path={"/canais-ao-vivo.html"} component={() => <PageWrapper pageType="channels" />} />
+      <Route path={"/instalar-smart-tv.html"} component={() => <PageWrapper pageType="install-smart-tv" />} />
+      <Route path={"/instalar-tv-box.html"} component={() => <PageWrapper pageType="install-tv-box" />} />
+      <Route path={"/instalar-firestick.html"} component={() => <PageWrapper pageType="install-firestick" />} />
+      <Route path={"/newbraz.html"} component={() => <PageWrapper pageType="newbraz" />} />
+      <Route path={"/renovar-newbraz.html"} component={() => <PageWrapper pageType="renew" />} />
+      <Route path={"/assistir-brasil.html"} component={() => <PageWrapper pageType="assistir" />} />
+      <Route path={"/assistir-canal-brasil.html"} component={() => <PageWrapper pageType="canal-brasil" />} />
 
       {/* English (EN) - /en/ paths */}
       <Route path={"/en/"} component={Home} />
