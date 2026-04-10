@@ -283,4 +283,9 @@
     background: linear-gradient(to right, #7c3aed, #2563eb, #f97316);
     margin: 3rem 0;
   }
+  
+  /* Hide Made with Manus */
+  [data-vite-plugin-manus-runtime] {
+    display: none !important;
+  }
 }

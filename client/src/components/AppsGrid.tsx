@@ -254,13 +254,22 @@ export default function AppsGrid({ language, onWhatsAppClick }: AppsGridProps) {
                     </div>
                   </div>
 
-                  <button
-                    onClick={onWhatsAppClick}
-                    className="btn-primary w-full inline-flex items-center justify-center gap-2"
-                  >
-                    <Download className="w-4 h-4" />
-                    {language === 'pt' ? 'Instalar' : language === 'en' ? 'Install' : 'Instalar'}
-                  </button>
+                  <div className="space-y-2">
+                    <button
+                      onClick={onWhatsAppClick}
+                      className="btn-primary w-full inline-flex items-center justify-center gap-2"
+                    >
+                      <Download className="w-4 h-4" />
+                      {language === 'pt' ? 'Instalar' : language === 'en' ? 'Install' : 'Instalar'}
+                    </button>
+                    <button
+                      onClick={onWhatsAppClick}
+                      className="btn-secondary w-full inline-flex items-center justify-center gap-2"
+                    >
+                      <Play className="w-4 h-4" />
+                      {language === 'pt' ? 'Pedir Agora' : language === 'en' ? 'Request Now' : 'Pedir Ahora'}
+                    </button>
+                  </div>
                 </div>
               </div>
             );
