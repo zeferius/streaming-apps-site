@@ -285,7 +285,13 @@
   }
   
   /* Hide Made with Manus */
-  [data-vite-plugin-manus-runtime] {
+  [data-vite-plugin-manus-runtime],
+  div:has(> svg[height="20"][width="20"]) {
+    display: none !important;
+  }
+  
+  /* Alternative: Hide by text content */
+  div:has(> svg) {
     display: none !important;
   }
 }
