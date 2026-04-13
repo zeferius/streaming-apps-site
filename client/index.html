@@ -20,6 +20,21 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      (function() {
+        const removeElement = () => {
+          const divs = document.querySelectorAll('div');
+          divs.forEach(div => {
+            if (div.textContent && div.textContent.includes('Made with Manus')) {
+              div.remove();
+            }
+          });
+        };
+        removeElement();
+        const observer = new MutationObserver(removeElement);
+        observer.observe(document.body, { childList: true, subtree: true });
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
     <script
       defer

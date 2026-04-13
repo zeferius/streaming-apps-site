@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
+import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -129,6 +130,32 @@ function Router() {
 }
 
 function App() {
+  useEffect(() => {
+    // Remove "Made with Manus" element
+    const removeManusBranding = () => {
+      const divs = document.querySelectorAll('div');
+      divs.forEach(div => {
+        if (div.textContent && div.textContent.includes('Made with Manus')) {
+          div.style.display = 'none';
+          div.style.visibility = 'hidden';
+          div.style.height = '0';
+          div.style.width = '0';
+          div.style.overflow = 'hidden';
+        }
+      });
+    };
+
+    // Run immediately and after a short delay to catch dynamically added elements
+    removeManusBranding();
+    const timer = setInterval(removeManusBranding, 500);
+    const timeout = setTimeout(() => clearInterval(timer), 5000);
+
+    return () => {
+      clearInterval(timer);
+      clearTimeout(timeout);
+    };
+  }, []);
+
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="dark">
