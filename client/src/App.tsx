@@ -7,6 +7,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import SpecificPages from "./pages/SpecificPages";
+import IPTVBlogPage from "./pages/IPTVBlogPage";
 
 type PageType = 'install-newbraz' | 'football' | 'movies' | 'series' | 'trial' | 'plans' | 'subscribe' | 'activation' | 'renew' | 'payment' | 'invoice' | 'channels' | 'install-smart-tv' | 'install-tv-box' | 'install-firestick' | 'tv-brasil' | 'newbraz' | 'assistir' | 'canal-brasil';
 
@@ -36,6 +37,7 @@ function Router() {
       <Route path={"/blog/como-ver-futebol-ao-vivo.html"} component={Home} />
       <Route path={"/blog/como-instalar-na-smart-tv.html"} component={Home} />
       <Route path={"/blog/app-para-tv-box.html"} component={Home} />
+      <Route path={"/blog/guia-iptv-2026.html"} component={IPTVBlogPage} />
 
       {/* Portuguese Specific Pages */}
       <Route path={"/instalar-newbraz.html"} component={() => <PageWrapper pageType="install-newbraz" />} />
@@ -90,6 +92,7 @@ function Router() {
       <Route path={"/en/blog/watch-football-online.html"} component={Home} />
       <Route path={"/en/blog/how-to-install-on-smart-tv.html"} component={Home} />
       <Route path={"/en/blog/best-app-for-tv-box.html"} component={Home} />
+      <Route path={"/en/blog/iptv-guide-2026.html"} component={IPTVBlogPage} />
 
       {/* Spanish (ES) - /es/ paths */}
       <Route path={"/es/"} component={Home} />
@@ -121,6 +124,7 @@ function Router() {
       <Route path={"/es/blog/mejor-streaming-2026.html"} component={Home} />
       <Route path={"/es/blog/como-instalar-en-smart-tv.html"} component={Home} />
       <Route path={"/es/blog/mejor-app-para-tv-box.html"} component={Home} />
+      <Route path={"/es/blog/guia-iptv-2026.html"} component={IPTVBlogPage} />
 
       {/* 404 */}
       <Route path={"/404"} component={NotFound} />
